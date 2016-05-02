@@ -1,14 +1,17 @@
 body {
   text-align: center;
+  background-color: steelblue;
 }
 .box {
   border: 2px black solid;
   padding: 5px;
   border-radius: 10px;
+  background-color: slategrey;
 }
 .choose {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
 }
 button {
   width: 300px;
