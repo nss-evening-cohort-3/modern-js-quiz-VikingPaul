@@ -1,9 +1,11 @@
 "use strict";
-$('#description').append(``);
+// creates a variable for the player not attacking
 let otherPlayer = 2;
 function battle() {
+  // battle function creates 'rolls' to hit and dodge to decide if 'otherPlayer' will hit/miss 'player'
   let hit = Math.ceil(Math.random()*20);
   let dodge = Math.ceil(Math.random()*20);
+  //switches player and otherPlayer from previous call of battle so the players take turns attacking
   switch(player) {
     case 1:
       player++;
@@ -14,6 +16,7 @@ function battle() {
       otherPlayer = 2;
       break;
   }
+  // logic for hit
   if (COMBATANTS["Player" + otherPlayer].aim + hit > COMBATANTS["Player" + player].dodge + dodge || hit === 20 && hit !== 1) {
     let damage = COMBATANTS["Player" + otherPlayer].attack + COMBATANTS["Player" + otherPlayer].weapon.attack()*COMBATANTS["Player" + otherPlayer].weapon.attackNumber();
     COMBATANTS["Player" + player].health -= damage;
@@ -24,10 +27,12 @@ function battle() {
       setTimeout(end, 2000);
     }
   } else {
+    // logic for miss
     $('#description').append(`Player ${otherPlayer} missed Player ${player} with thier ${COMBATANTS["Player" + otherPlayer].weapon.name}. Player ${player} remains at ${COMBATANTS["Player" + player].health} HP.<br>`);
     setTimeout(battle, 2000);
   }
 }
+// end function ends game. unless chance === 20, then it revives player and returns to battle
 function end() {
   let chance = Math.ceil(Math.random()*20);
   if (chance === 20) {

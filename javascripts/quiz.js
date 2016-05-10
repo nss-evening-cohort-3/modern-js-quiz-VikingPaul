@@ -186,4 +186,3 @@ WEAPONS.Potato = function() {
 WEAPONS.Potato.prototype = new Weapons();
 
 //////////////////////////////////////////////////////////////
-
