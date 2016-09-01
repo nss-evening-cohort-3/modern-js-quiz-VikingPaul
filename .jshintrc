@@ -1,0 +1,5 @@
+{
+    "predef": ["WEAPONS", "MODS", "TYPE", "COMBATANTS", "battle", "player", "setTimeout", "document", "console", "jquery", "$"],
+    "esversion": 6,
+    "globalstrict": true
+  }

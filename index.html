@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern JavaScript Quiz</title>
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+  <h1 id="player"></h1>
+  <article class='choose' id="botChoice">
+    <button id="UAV">UAV</button>
+    <button id="USV">USV</button>
+    <button id="Bodyguard">Bodyguard</button>
+    <button id="Bionic">Bionic</button>
+    <button id="Tank">Tank</button>
+    <button id="Tesla">Tesla</button>
+  </article>
+
+  <article class='choose' id="weaponChoice">
+    <button id="Laser">Laser</button>
+    <button id="Bomb">Bomb</button>
+    <button id="FiftyCal">50-Cal</button>
+    <button id="MachineGun">Machine Gun</button>
+    <button id="Nuke">Nuke</button>
+    <button id="Potato">Potato</button>
+  </article>
+
+  <article class='choose' id="modChoice">
+    <button id="DefenseMod">Defense Mod</button>
+    <button id="AttackMod">Attack Mod</button>
+    <button id="CamoMod">Camo Mod</button>
+    <button id="AshtrayMod">Ashtray Mod</button>
+    <button id="SolarMod">Solar Mod</button>
+    <button id="WeaponAfinityMod">Weapon Afinity Mod</button>
+  </article>
+  
+  <article class='choose' id="battleTime">
+    <section id="player1" class="box"></section>
+    <section id="description" class="box"></section>
+    <section id="player2" class="box"></section>
+  </article>
+
+  <article class='choose end'>
+    <button id="again">Shall we play again?</button>
+  </article>
+
+  <script src="javascripts/quiz.js"></script>
+  <script src="javascripts/eventListeners.js"></script>
+  <script src="javascripts/battle.js"></script>
+</body>
+</html>
