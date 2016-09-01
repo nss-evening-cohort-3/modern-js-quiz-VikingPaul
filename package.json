@@ -1,0 +1,35 @@
+{
+  "name": "mjdquiz",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "browserify": "^13.0.0",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-util": "^3.0.7",
+    "jshint-stylish": "^2.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "jshint": "^2.9.2",
+    "lodash.assign": "^4.0.8",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0",
+    "gulp-watch": "^4.3.5",
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nss-evening-cohort-3/modern-js-quiz-VikingPaul.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-evening-cohort-3/modern-js-quiz-VikingPaul/issues"
+  },
+  "homepage": "https://github.com/nss-evening-cohort-3/modern-js-quiz-VikingPaul#readme"
+}
